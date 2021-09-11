@@ -44,7 +44,7 @@
 		</statBases>
 		<comps>
 			<li Class="DubsCentralHeating.CompProperties_Pipe">
-				<mode>Sewage</mode>
+				<mode>Heating</mode>
 			</li>
 			<li Class="DubsCentralHeating.CompProperties_Thermostat">
 				<maxTargetTemperature>35</maxTargetTemperature>
@@ -83,7 +83,7 @@
 		</statBases>
 		<comps>
 			<li Class="DubsCentralHeating.CompProperties_Pipe">
-				<mode>Sewage</mode>
+				<mode>Heating</mode>
 			</li>
 			<li Class="DubsCentralHeating.CompProperties_CompBoiler">
 				<BaseCapacity>2000</BaseCapacity>
@@ -152,7 +152,7 @@
 				<compClass>CompColorable</compClass>
 			</li>
 			<li Class="DubsCentralHeating.CompProperties_Pipe">
-				<mode>Sewage</mode>
+				<mode>Heating</mode>
 			</li>
 			<li Class="DubsCentralHeating.CompProperties_CompBoiler">
 				<BaseCapacity>2000</BaseCapacity>
@@ -214,7 +214,7 @@
 				<compClass>CompColorable</compClass>
 			</li>
 			<li Class="DubsCentralHeating.CompProperties_Pipe">
-				<mode>Sewage</mode>
+				<mode>Heating</mode>
 			</li>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
@@ -267,7 +267,7 @@
 		</statBases>
 		<comps>
 			<li Class="DubsCentralHeating.CompProperties_Pipe">
-				<mode>Sewage</mode>
+				<mode>Heating</mode>
 			</li>
 			<li Class="DubsCentralHeating.CompProperties_CompBoiler">
 				<compClass>DubsCentralHeating.CompBoilerSolar</compClass>
@@ -307,7 +307,7 @@
 			<Beauty>-10</Beauty>
 		</statBases>
 		<comps>
-			<li Class="DubsCentralHeating.CompProperties_Pipe">
+			<li Class="DubsBadHygiene.CompProperties_Pipe">
 				<mode>Sewage</mode>
 			</li>
 			<li Class="CompProperties_Flickable">
@@ -354,14 +354,15 @@
 				<compClass>CompColorable</compClass>
 			</li>
 			<li Class="DubsCentralHeating.CompProperties_Pipe">
-				<mode>Sewage</mode>
+				<mode>Heating</mode>
 			</li>
 			<li Class="CompProperties_Flickable">
 				<commandTexture>DBH/Things/Building/Valve</commandTexture>
 				<commandLabelKey>CommandDesignateOpenCloseValveLabel</commandLabelKey>
 				<commandDescKey>CommandDesignateOpenCloseValveDesc</commandDescKey>
 			</li>
-			<li Class="DubsCentralHeating.CompProperties_Thermostat">
+			<li Class="CompProperties_TempControl">
+				<compClass>DubsCentralHeating.DBHCompTempControl</compClass>
 				<maxTargetTemperature>35</maxTargetTemperature>
 				<minTargetTemperature>5</minTargetTemperature>
 				<defaultTargetTemperature>21</defaultTargetTemperature>

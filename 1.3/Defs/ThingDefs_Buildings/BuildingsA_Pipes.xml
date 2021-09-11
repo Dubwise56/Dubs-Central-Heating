@@ -69,9 +69,9 @@
 
 
   <ThingDef ParentName="DubsDirtyPipeBase">
-    <defName>sewagePipeStuff</defName>
-    <label>plumbing</label>
-    <description>Plumbing for connecting plumbed things.</description>
+    <defName>HeatingPipe</defName>
+    <label>Heating Pipe</label>
+    <description>Plumbing for connecting central heating.</description>
     <uiIconPath>DBH/UI/Plumbing</uiIconPath>
     <stuffCategories>
       <li>Metallic</li>
@@ -81,7 +81,7 @@
     <costStuffCount>1</costStuffCount>
     <comps>
       <li Class="DubsCentralHeating.CompProperties_Pipe">
-        <mode>Sewage</mode>
+        <mode>Heating</mode>
         <stuffed>true</stuffed>
       </li>
     </comps>
@@ -90,58 +90,5 @@
     </researchPrerequisites>
   </ThingDef>
 
-  <ThingDef ParentName="BasedHeatingMom">
-    <thingClass>DubsCentralHeating.Building_Valve</thingClass>
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>Standable</passability>
-    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-    <minifiedDef>MinifiedThing</minifiedDef>
-    <thingCategories>
-      <li>BuildingsMisc</li>
-    </thingCategories>
-    <building>
-      <ai_chillDestination>false</ai_chillDestination>
-      <isInert>true</isInert>
-      <isEdifice>false</isEdifice>
-    </building>
-    <statBases>
-      <MaxHitPoints>80</MaxHitPoints>
-      <WorkToBuild>350</WorkToBuild>
-      <Flammability>1.0</Flammability>
-      <Beauty>-2</Beauty>
-      <Mass>2</Mass>
-    </statBases>
-    <costList>
-      <Steel>15</Steel>
-    </costList>
-    <rotatable>false</rotatable>
-    <selectable>true</selectable>
-    <constructEffect>ConstructMetal</constructEffect>
-    <defName>plumbingValve</defName>
-    <label>plumbing valve</label>
-    <pathCost>75</pathCost>
-    <description>Opens or closes connections between pipes.</description>
-    <graphicData>
-      <texPath>DBH/Things/Building/Valve</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(1,1)</drawSize>
-    </graphicData>
-    <comps>
-      <li Class="DubsCentralHeating.CompProperties_Pipe">
-        <mode>Sewage</mode>
-      </li>
-      <li Class="CompProperties_Flickable">
-        <commandTexture>DBH/Things/Building/Valve</commandTexture>
-        <commandLabelKey>CommandDesignateOpenCloseValveLabel</commandLabelKey>
-        <commandDescKey>CommandDesignateOpenCloseValveDesc</commandDescKey>
-      </li>
-    </comps>
-    <designationCategory>Temperature</designationCategory>
-    <researchPrerequisites>
-		<li MayRequire="dbhlitemode">Plumbing</li>
-    </researchPrerequisites>
-  </ThingDef>
 
-
-  
 </Defs>
