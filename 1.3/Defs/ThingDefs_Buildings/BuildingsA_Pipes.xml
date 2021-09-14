@@ -1,6 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
+
+	<DubsCentralHeating.DefExtensions>
+		<defName>DubsCentralHeatingExtensions</defName>
+	</DubsCentralHeating.DefExtensions>
+
 	<ThingDef Name="BasedHeatingMom" Abstract="True">
 		<category>Building</category>
 		<thingClass>Building</thingClass>
@@ -62,9 +67,6 @@
     </placeWorkers>
     <tickerType>Never</tickerType>
     <drawerType>MapMeshOnly</drawerType>
-    <modExtensions>
-      <li Class="DubsCentralHeating.BuildWaterExt" />
-    </modExtensions>
   </ThingDef>
 
 
