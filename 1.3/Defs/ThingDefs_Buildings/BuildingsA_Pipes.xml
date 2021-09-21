@@ -28,15 +28,15 @@
 
 
   <!-- Pipes  -->
-  <ThingDef ParentName="BasedHeatingMom" Name="DubsDirtyPipeBase" Abstract="True">
+  <ThingDef ParentName="BasedHeatingMom" Name="DubsHotPipeBase" Abstract="True">
     <label>pipe</label>
     <thingClass>DubsCentralHeating.Building_Pipe</thingClass>
     <graphicData>
-      <texPath>DBH/Things/Building/radPipes_atlas</texPath>
+      <texPath>DCH/Things/Building/radPipes_atlas</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <linkType>Basic</linkType>
       <linkFlags>
-        <li>Custom5</li>
+        <li>Custom7</li>
       </linkFlags>
       <damageData>
         <rect>(0,0.35,1,0.3)</rect>
@@ -45,7 +45,7 @@
     <building>
       <ai_chillDestination>false</ai_chillDestination>
       <blueprintGraphicData>
-        <texPath>DBH/Things/Building/SewagePipe_Atlas_Blueprint</texPath>
+        <texPath>DCH/Things/Building/SewagePipe_Atlas_Blueprint</texPath>
       </blueprintGraphicData>
       <isInert>true</isInert>
       <isEdifice>false</isEdifice>
@@ -70,11 +70,11 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="DubsDirtyPipeBase">
+  <ThingDef ParentName="DubsHotPipeBase">
     <defName>HeatingPipe</defName>
     <label>Heating Pipe</label>
     <description>Plumbing for connecting central heating.</description>
-    <uiIconPath>DBH/UI/Plumbing</uiIconPath>
+    <uiIconPath>DCH/UI/Plumbing</uiIconPath>
     <stuffCategories>
       <li>Metallic</li>
       <li>Woody</li>
