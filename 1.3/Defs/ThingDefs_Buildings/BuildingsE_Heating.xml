@@ -428,14 +428,14 @@
 	</ThingDef>
 
 
-	<!--<ThingDef ParentName="BaseRadiator">
-		<thingClass>DubsCentralHeating.Building_TowelRail</thingClass>
+	<ThingDef ParentName="BaseRadiator" BadHygiene="true">
+		<thingClass>DubsBadHygiene.Building_TowelRail</thingClass>
 		<defName>RadiatorTowelRail</defName>
 		<label>Towel Rail</label>
 		<description>Impressive bathroom towel rail.</description>
-		<uiIconPath>DCH/UI/TowelRail</uiIconPath>
+		<uiIconPath>DBH/UI/TowelRail</uiIconPath>
 		<graphicData>
-			<texPath>DCH/Things/Building/Heating/TowelRail</texPath>
+			<texPath>DBH/Things/Building/Heating/TowelRail</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2,2)</drawSize>
 			<damageData>
@@ -450,17 +450,34 @@
 			<li>Metallic</li>
 			<li>Stony</li>
 		</stuffCategories>
-		<comps>
+		<comps Inherit="False">
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+			<li Class="DubsCentralHeating.CompProperties_Pipe">
+				<mode>Heating</mode>
+			</li>
 			<li Class="DubsCentralHeating.CompProperties_Radiator">
 				<StoreCapacity>100</StoreCapacity>
 				<Energy>21</Energy>
 				<HeatingRate>250</HeatingRate>
 			</li>
+			<li Class="CompProperties_Flickable">
+				<commandTexture>DCH/Things/Building/Valve</commandTexture>
+				<commandLabelKey>CommandDesignateOpenCloseValveLabel</commandLabelKey>
+				<commandDescKey>CommandDesignateOpenCloseValveDesc</commandDescKey>
+			</li>
+			<li Class="CompProperties_TempControl">
+				<compClass>DubsCentralHeating.DBHCompTempControl</compClass>
+				<maxTargetTemperature>35</maxTargetTemperature>
+				<minTargetTemperature>5</minTargetTemperature>
+				<defaultTargetTemperature>21</defaultTargetTemperature>
+			</li>
 		</comps>
 		<statBases>
 			<Beauty>6</Beauty>
 		</statBases>
-	</ThingDef>-->
+	</ThingDef>
 
 
 	<!--COOLING-->
