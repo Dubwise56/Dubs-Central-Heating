@@ -9,4 +9,12 @@
 	</supportedVersions>
 	<packageId>Dubwise.DubsCentralHeating</packageId>
 	<description>Central heating mod with boilers and radiators for more efficient heating, split piped air conditioning and freezers and ceiling fans with built in lights.\n\n Standalone version of my Bad Hygiene mod central heating.\n\nCan be used with the full Bad Hygiene mod and Bad Hygiene Lite\n\nIf Bad Hygiene is loaded then its central heating buildings will be replace with this mods version allowing for split pipe nets for heating and water</description>
+	<loadAfter>
+		<li>Dubwise.DubsBadHygiene.Lite</li>
+		<li>Dubwise.DubsBadHygiene</li>
+	</loadAfter>
+	<forceLoadAfter>
+		<li>Dubwise.DubsBadHygiene.Lite</li>
+		<li>Dubwise.DubsBadHygiene</li>
+	</forceLoadAfter>
 </ModMetaData> 
