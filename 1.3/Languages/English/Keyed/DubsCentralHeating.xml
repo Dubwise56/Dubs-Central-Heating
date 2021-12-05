@@ -55,4 +55,7 @@
 	<ExperimentalFeatures>Experimental features</ExperimentalFeatures>
 	<dbh.ExtraFeatures>Extra features</dbh.ExtraFeatures>
 
+	<HygieneWiki>Bad Hygiene Wiki</HygieneWiki>
+	<HygieneWikiDesc>Go to the Bad Hygiene Wiki</HygieneWikiDesc>
+
 </LanguageData>
