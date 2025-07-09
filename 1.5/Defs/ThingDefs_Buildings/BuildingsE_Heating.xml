@@ -281,7 +281,7 @@
 	</ThingDef>
 
 
-	<ThingDef ParentName="BasedHeatingMom" DBHLite="true">
+	<ThingDef ParentName="BasedHeatingMom">
 		<designationCategory>Temperature</designationCategory>
 		<defName>GeothermHeater</defName>
 		<label>Geothermal heater</label>
