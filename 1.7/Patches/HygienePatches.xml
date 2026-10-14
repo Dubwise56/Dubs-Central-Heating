@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/DesignationCategoryDef[defName = "Temperature"]/specialDesignatorClasses</xpath>
+		<value>
+			<li>DubsCentralHeating.Designator_RemovePlumbing</li>
+		</value>
+	</Operation>
+
+</Patch>
